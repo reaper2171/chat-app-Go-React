@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/akhil/golang-chat/pkg/websocket"
+	"github.com/reaper2171/chat-app-Go-React/pkg/websocket"
 )
 
 func serveWS(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
@@ -33,7 +33,7 @@ func setupRoutes() {
 }
 
 func main() {
-	fmt.Println("Akhil's full stack chat project")
+	fmt.Println("Real Time chat app")
 	setupRoutes()
 	http.ListenAndServe(":9000", nil)
 }
